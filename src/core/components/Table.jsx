@@ -30,7 +30,7 @@ const Table = () => {
     ];
 
   return (
-    <div className='mt-8 bg-white rounded-md px-6 py-4'>
+    <div className='mt-8 bg-[#2b2929] rounded-md px-6 py-4'>
         <div className='flex flex-wrap justify-between items-center mb-8'>
             <h3 className='text-gray-900 text-left text-xl font-semibold'>Product Sell</h3>
             <form className="lg:pl-2">
@@ -112,7 +112,7 @@ const Table = () => {
                         </tr>
                     </thead>
                     <tbody>
-                       {salesData.map((product)=><tr className="bg-white dark:bg-gray-800 dark:border-gray-700 text-sm">
+                       {salesData.map((product)=><tr className="bg-[#2b2929] dark:bg-gray-800 dark:border-gray-700 text-sm">
                             <td className="py-2 w-auto md:w-20">
                                 <img 
                                 src={product.image} 

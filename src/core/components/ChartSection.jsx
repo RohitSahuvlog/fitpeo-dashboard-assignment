@@ -5,7 +5,7 @@ import Donutchart from './charts/Donutchart'
 const ChartSection = () => {
   return (
     <>
-        <div className='col-span-2 mt-8 bg-white rounded-md px-6 py-4'>
+        <div className='col-span-2 mt-8 bg-[#2b2929] rounded-md px-6 py-4'>
             <div className='flex flex-col justify-between items-center'>
                 <div className='flex justify-between items-center w-full mb-4'>
                     <div className=''>
@@ -24,7 +24,7 @@ const ChartSection = () => {
             </div>
         </div>
 
-        <div className='mt-8 grid-cols-3 bg-white rounded-md px-6 py-4'>
+        <div className='mt-8 grid-cols-3 bg-[#2b2929] rounded-md px-6 py-4'>
             <div className='flex flex-col justify-between items-center'>
                 <div className='w-full mb-4'>
                     <h3 className='text-gray-900 text-left text-xl font-semibold'>Customers</h3>

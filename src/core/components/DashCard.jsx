@@ -6,7 +6,7 @@ const DashCard = ({card}) => {
     const uid=useId();
 
   return (
-    <div className='flex justify-evenly items-center px-2 py-4 rounded-md bg-white w-full' key={uid}>
+    <div style={{backgroundColor:"#2b2929"}} className='flex justify-evenly items-center px-2 py-4 rounded-md bg-white w-full' key={uid}>
         <div 
         className={`grid place-items-center rounded-full h-[120px] w-[120px] text-6xl ${color}`}>
         {icon}
