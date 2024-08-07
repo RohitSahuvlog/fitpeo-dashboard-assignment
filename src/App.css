@@ -8,13 +8,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
-
 }
 
 
 body {
   font-family: 'Inter', sans-serif;
-  background:#f5f3f3ea;
   height: 100%;
+  background-color: #e2e2e269;
+  color: black;
 }
-

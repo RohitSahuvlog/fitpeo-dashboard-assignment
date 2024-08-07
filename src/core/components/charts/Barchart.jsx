@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -23,31 +23,29 @@ ChartJS.register(
 
 
 const data = {
-  labels:['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep','Oct','Nov','Dec'],
-  // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   datasets: [
-      {
-        label: '',
-        data: [45, 20, 60, 50, 46, 100, 78,135,90,50,50,50],
-        // you can set indiviual colors for each bar
-        backgroundColor: [
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#4338ca',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
-          '#eef2ff',
+    {
+      label: '',
+      data: [45, 20, 60, 50, 46, 100, 78, 135, 90, 50, 50, 50],
+      backgroundColor: [
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#4338ca',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
+        '#eef2ff',
 
-        ],
-        borderWidth: 1,
-        borderRadius:10
-      }
+      ],
+      borderWidth: 1,
+      borderRadius: 10
+    }
   ]
 }
 
@@ -55,20 +53,19 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
-      // position: 'top',
-      display:false
+      display: false
     },
     title: {
-      display: false,  //true
+      display: false,
       text: '',
     },
-    label:{
-      
+    label: {
+
     },
-    datasets:{
-      display:false
+    datasets: {
+      display: false
     }
-    
+
   },
   scales: {
     x: {
@@ -89,23 +86,23 @@ export const options = {
         display: false
       },
       grid: {
-       display:false
+        display: false
       },
     }
   },
-  elements:{
-    bar:{
-      border:false,
-      borderSkipped:'bottom'
+  elements: {
+    bar: {
+      border: false,
+      borderSkipped: 'bottom'
     }
   }
 };
 
 
 const Barchart = () => {
-  const [chartData, setChartData]=useState(data);
+  const [chartData, setChartData] = useState(data);
   return (
-    <Bar options={options} data={chartData}/>
+    <Bar options={options} data={chartData} />
   )
 }
 

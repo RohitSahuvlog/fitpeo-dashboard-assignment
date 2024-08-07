@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
@@ -10,20 +10,18 @@ ChartJS.register(
 
 
 const data = {
-  labels:['Product 1','Product 2','Product 3'],
-  // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
+  labels: ['Product 1', 'Product 2', 'Product 3'],
   datasets: [
-      {
-        label: '',
-        data: [20,50,30],
-        // you can set indiviual colors for each bar
-        backgroundColor: [
-            '#ec4899',
-            '#7e22ce',
-          '#eef2ff',
-        ],
-        borderWidth: 1,
-      }
+    {
+      label: '',
+      data: [20, 50, 30],
+      backgroundColor: [
+        '#ec4899',
+        '#7e22ce',
+        '#eef2ff',
+      ],
+      borderWidth: 1,
+    }
   ]
 }
 
@@ -33,72 +31,72 @@ export const options = {
   plugins: {
     legend: {
       // position: 'top',
-      display:false
+      display: false
     },
     title: {
       display: false,  //true
       text: '',
     },
-    label:{
-      
+    label: {
+
     },
-    datasets:{
-      display:false
+    datasets: {
+      display: false
     },
     doughnutlabel: {
-        labels: [
-          {
-            text: 65,
-            font: {
-              size: "40"
-            },
-            color: "black"
+      labels: [
+        {
+          text: 65,
+          font: {
+            size: "40"
           },
-          {
-            text: "Due ≤ 60 Days",
-            font: {
-              size: "25"
-            },
-            color: "grey"
-          }
-        ]
+          color: "black"
+        },
+        {
+          text: "Due ≤ 60 Days",
+          font: {
+            size: "25"
+          },
+          color: "grey"
+        }
+      ]
     },
-  scales: {
-    x: {
-      border: {
-        display: false
+    scales: {
+      x: {
+        border: {
+          display: false
+        },
+        grid: {
+          display: false,
+        },
+        ticks: {
+          maxRotation: 0,
+          minRotation: 0,
+          autoSkip: false,
+        }
       },
-      grid: {
-        display: false,
-      },
-      ticks: {
-        maxRotation: 0,
-        minRotation: 0,
-        autoSkip: false,
+      y: {
+        border: {
+          display: false
+        },
+        grid: {
+          display: false
+        },
       }
     },
-    y: {
-      border: {
-        display: false
-      },
-      grid: {
-       display:false
-      },
-    }
-  },
-  elements:{
-    bar:{
-      border:false,
-      borderSkipped:'bottom'
+    elements: {
+      bar: {
+        border: false,
+        borderSkipped: 'bottom'
+      }
     }
   }
-}
 };
 
 const Donutchart = () => {
-  const [chartData, setChartData]=useState(data);
+  const [chartData, setChartData] = useState(data);
   return (
-    <Doughnut options={options} data={chartData}/>
+    <Doughnut options={options} data={chartData} />
   )
 }
 

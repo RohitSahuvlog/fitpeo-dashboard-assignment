@@ -1,15 +1,10 @@
 const DashNavbar = ({ isOpen, setIsOpen }) => {
   return (
     <>
-      <nav className="py-2.5 dark:bg-gray-800 mb-8 bg-[#2b2929] ">
+      <nav className="py-2.5 dark:bg-gray-800 mb-8 bg-white ">
         <div className="flex flex-wrap justify-between">
           <div className="flex  w-full">
             <div className="flex">
-              {/* <button 
-                onClick={()=>setIsOpen(!isOpen)}
-                id="toggleSidebar" aria-expanded="true" aria-controls="sidebar" className="p-2 mr-3 text-gray-600 rounded cursor-pointer lg:inline hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
-                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12"> <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h14M1 6h14M1 11h7"/> </svg>
-                </button> */}
             </div>
             <div className="">
               <form action="#" method="GET" className="w-1/2 lg:pl-2">
@@ -39,7 +34,7 @@ const DashNavbar = ({ isOpen, setIsOpen }) => {
                     type="text"
                     name="email"
                     id="topbar-search"
-                    className="bg-[#2b2929] border text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    className=" border text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Search"
                   />
                 </div>
@@ -49,7 +44,7 @@ const DashNavbar = ({ isOpen, setIsOpen }) => {
         </div>
       </nav>
       <div>
-        <p className="text-white text-sm md:text-xl font-semibold text-left">Dashboard</p>
+        <p className="text-black text-sm md:text-xl font-semibold text-left">Dashboard</p>
       </div>
     </>
   )
